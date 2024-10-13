@@ -198,7 +198,7 @@ generate
         always @(posedge clk or negedge reset_n) begin
             if(!reset_n) begin
                 r_core_data[idx+1]   <= {DWIDTH{1'b0}};
-            end else if(|r_core_delay) begin
+            end else begin
                 r_core_data[idx+1]   <= r_core_data[idx];
             end
         end
@@ -209,7 +209,7 @@ endgenerate
 always @(posedge clk or negedge reset_n) begin
     if(!reset_n) begin
         r_core_data[0] <= {DWIDTH{1'b0}};  
-    end else if(|r_core_delay) begin
+    end else begin
 		r_core_data[0]	<= mem_data; // read data
 	end
 end

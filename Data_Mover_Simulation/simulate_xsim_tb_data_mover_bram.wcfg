@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulate_xsim_tb_data_mover_bram.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_data_mover_bram" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="22.824800 us"></ZoomStartTime>
+      <ZoomEndTime time="66.824801 us"></ZoomEndTime>
+      <Cursor1Time time="42.824800 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/i_run">
+      <obj_property name="ElementShortName">i_run</obj_property>
+      <obj_property name="ObjectShortName">i_run</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/i_num_cnt">
+      <obj_property name="ElementShortName">i_num_cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_num_cnt[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/o_idle">
+      <obj_property name="ElementShortName">o_idle</obj_property>
+      <obj_property name="ObjectShortName">o_idle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/o_write">
+      <obj_property name="ElementShortName">o_write</obj_property>
+      <obj_property name="ObjectShortName">o_write</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/o_read">
+      <obj_property name="ElementShortName">o_read</obj_property>
+      <obj_property name="ObjectShortName">o_read</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/o_done">
+      <obj_property name="ElementShortName">o_done</obj_property>
+      <obj_property name="ObjectShortName">o_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider30" type="divider">
+      <obj_property name="label">Core_from_BRAM0_Read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/addr0_b0">
+      <obj_property name="ElementShortName">addr0_b0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr0_b0[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/ce0_b0">
+      <obj_property name="ElementShortName">ce0_b0</obj_property>
+      <obj_property name="ObjectShortName">ce0_b0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/we0_b0">
+      <obj_property name="ElementShortName">we0_b0</obj_property>
+      <obj_property name="ObjectShortName">we0_b0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/q0_b0">
+      <obj_property name="ElementShortName">q0_b0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q0_b0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/d0_b0">
+      <obj_property name="ElementShortName">d0_b0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d0_b0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider31" type="divider">
+      <obj_property name="label">Core_to_BRAM1_Write</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/addr0_b1">
+      <obj_property name="ElementShortName">addr0_b1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr0_b1[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/ce0_b1">
+      <obj_property name="ElementShortName">ce0_b1</obj_property>
+      <obj_property name="ObjectShortName">ce0_b1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/we0_b1">
+      <obj_property name="ElementShortName">we0_b1</obj_property>
+      <obj_property name="ObjectShortName">we0_b1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/q0_b1">
+      <obj_property name="ElementShortName">q0_b1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q0_b1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/d0_b1">
+      <obj_property name="ElementShortName">d0_b1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d0_b1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider32" type="divider">
+      <obj_property name="label">TB_to_BRAM0_Write_Initial_Value</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/addr1_b0">
+      <obj_property name="ElementShortName">addr1_b0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1_b0[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/ce1_b0">
+      <obj_property name="ElementShortName">ce1_b0</obj_property>
+      <obj_property name="ObjectShortName">ce1_b0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/we1_b0">
+      <obj_property name="ElementShortName">we1_b0</obj_property>
+      <obj_property name="ObjectShortName">we1_b0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/q1_b0">
+      <obj_property name="ElementShortName">q1_b0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q1_b0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/d1_b0">
+      <obj_property name="ElementShortName">d1_b0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d1_b0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider33" type="divider">
+      <obj_property name="label">TB_from_BRAM1_Read_for_Test</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/addr1_b1">
+      <obj_property name="ElementShortName">addr1_b1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1_b1[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/ce1_b1">
+      <obj_property name="ElementShortName">ce1_b1</obj_property>
+      <obj_property name="ObjectShortName">ce1_b1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_data_mover_bram/we1_b1">
+      <obj_property name="ElementShortName">we1_b1</obj_property>
+      <obj_property name="ObjectShortName">we1_b1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/q1_b1">
+      <obj_property name="ElementShortName">q1_b1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q1_b1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/d1_b1">
+      <obj_property name="ElementShortName">d1_b1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d1_b1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_data_mover_bram/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>
