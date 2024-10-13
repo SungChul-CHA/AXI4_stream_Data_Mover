@@ -1,0 +1,4 @@
+xvlog ./true_dpbram.v ./data_mover_bram.v ./tb_data_mover_bram.v
+xelab tb_data_mover_bram -debug wave -s tb_data_mover_bram
+#xsim tb_data_mover_bram -R  # do not check waveform
+xsim tb_data_mover_bram -gui -wdb simulate_xsim_tb_data_mover_bram.wdb 
