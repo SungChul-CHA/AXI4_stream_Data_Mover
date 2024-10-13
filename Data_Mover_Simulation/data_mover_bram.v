@@ -22,6 +22,7 @@
 module data_mover_bram
 // Param
 #(
+	parameter CNT_BIT = 31,
 // BRAM
 	parameter DWIDTH = 32,
 	parameter AWIDTH = 12,
@@ -34,7 +35,7 @@ module data_mover_bram
     input 				clk,
     input 				reset_n,
 	input 				i_run,
-	input  [AWIDTH-1:0]	i_num_cnt,
+	input [CNT_BIT-1:0] i_num_cnt,
 	output   			o_idle,
 	output   			o_read,
 	output   			o_write,
@@ -133,8 +134,8 @@ always @(posedge clk or negedge reset_n) begin
 end
 
 // Step 5. increased addr_cnt
-reg [AWIDTH-1:0] addr_cnt_read;  
-reg [AWIDTH-1:0] addr_cnt_write;
+reg [CNT_BIT-1:0] addr_cnt_read;  
+reg [CNT_BIT-1:0] addr_cnt_write;
 assign is_read_done  = o_read  && (addr_cnt_read == num_cnt-1);
 assign is_write_done = o_write && (addr_cnt_write == num_cnt-1);
 

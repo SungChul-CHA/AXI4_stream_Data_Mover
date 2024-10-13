@@ -19,6 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
 
+`define CNT_BIT 31
 `define ADDR_WIDTH 12
 `define DATA_WIDTH 32
 `define MEM_DEPTH 4096
@@ -130,7 +131,7 @@ module tb_data_mover_bram;
             $display("Mismatch Data in BRAM_1. i = %d, [%0d]", i, $time);
         end
         else begin
-            $display("Success! i=%d, u_TDPBRAM_1.ram[i]=%0d [%0d] ", i, u_TDPBRAM_1.ram[i], $time);
+            $display("Success! u_TDPBRAM_1.ram[%0d]=%0d [%0d] ", i, u_TDPBRAM_1.ram[i], $time);
         end
     `endif
     end
@@ -142,7 +143,8 @@ module tb_data_mover_bram;
 
     // DUT
     data_mover_bram
-    #(	.DWIDTH   (`DATA_WIDTH), 
+    #(	.CNT_BIT  (`CNT_BIT),
+        .DWIDTH   (`DATA_WIDTH), 
         .AWIDTH   (`ADDR_WIDTH), 
         .MEM_SIZE (`MEM_DEPTH),
         .CORE_DELAY (`CORE_DELAY))
